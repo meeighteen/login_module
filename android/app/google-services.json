@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011649681305",
+    "project_id": "startuptacna",
+    "storage_bucket": "startuptacna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011649681305:android:58a0ede96d3fe1ff8da508",
+        "android_client_info": {
+          "package_name": "com.startuptacna.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011649681305-9sjge7jqgqimff1elfpf0li0b9o3d90s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc8XhKXMNrrgKuE5DtEzbcc99rWMPBUSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011649681305-9sjge7jqgqimff1elfpf0li0b9o3d90s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

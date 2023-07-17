@@ -1,0 +1,81 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run -d emulator-5554 --pid-file tmp/flutter.pid
+
+## exception
+
+PathNotFoundException: PathNotFoundException: Cannot open file, path = 'tmp/flutter.pid' (OS Error: El sistema no puede encontrar la ruta especificada.
+, errno = 3)
+
+```
+#0      _File.throwIfError (dart:io/file_impl.dart:675:7)
+#1      _File.openSync (dart:io/file_impl.dart:490:5)
+#2      _File.writeAsBytesSync (dart:io/file_impl.dart:644:31)
+#3      _File.writeAsStringSync (dart:io/file_impl.dart:668:5)
+#4      ForwardingFile.writeAsStringSync (package:file/src/forwarding/forwarding_file.dart:150:16)
+#5      ErrorHandlingFile.writeAsStringSync.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:267:22)
+#6      _runSync (package:flutter_tools/src/base/error_handling_io.dart:590:14)
+#7      ErrorHandlingFile.writeAsStringSync (package:flutter_tools/src/base/error_handling_io.dart:266:5)
+#8      _DefaultProcessInfo.writePidFile (package:flutter_tools/src/base/io.dart:403:9)
+#9      TerminalHandler.registerSignalHandlers (package:flutter_tools/src/resident_runner.dart:1687:39)
+#10     RunCommand.runCommand.<anonymous closure> (package:flutter_tools/src/commands/run.dart:744:15)
+#11     _rootRunUnary (dart:async/zone.dart:1407:47)
+#12     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.10.2, on Microsoft Windows [Versi¢n 10.0.22621.1992], locale es-MX)
+    [32m•[39m Flutter version 3.10.2 on channel stable at C:\src\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 9cd3d0d9ff (8 weeks ago), 2023-05-23 20:57:28 -0700
+    [32m•[39m Engine revision 90fa3ae28f
+    [32m•[39m Dart version 3.0.2
+    [32m•[39m DevTools version 2.23.1
+
+[32m[✓][39m Windows Version (Installed version of Windows is version 10 or higher)
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 33.0.2)
+    [32m•[39m Android SDK at C:\Users\ACER\AppData\Local\Android\sdk
+    [32m•[39m Platform android-33, build-tools 33.0.2
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[32m[✓][39m Visual Studio - develop for Windows (Visual Studio Build Tools 2019 16.11.27)
+    [32m•[39m Visual Studio at C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools
+    [32m•[39m Visual Studio Build Tools 2019 version 16.11.33801.447
+    [32m•[39m Windows 10 SDK version 10.0.19041.0
+
+[32m[✓][39m Android Studio (version 2022.2)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+
+[32m[✓][39m VS Code (version 1.80.1)
+    [32m•[39m VS Code at C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code
+    [32m•[39m Flutter extension version 3.68.0
+
+[32m[✓][39m Connected device (4 available)
+    [32m•[39m Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 10 (API 29) (emulator)
+    [32m•[39m Windows (desktop)                  • windows       • windows-x64    • Microsoft Windows [Versi¢n
+      10.0.22621.1992]
+    [32m•[39m Chrome (web)                       • chrome        • web-javascript • Google Chrome 114.0.5735.199
+    [32m•[39m Edge (web)                         • edge          • web-javascript • Microsoft Edge 114.0.1823.82
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[32m•[39m No issues found!
+```
